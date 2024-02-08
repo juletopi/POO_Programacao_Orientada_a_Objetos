@@ -1,0 +1,7 @@
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Prova_de_Nivelamento_(POO)\bin\Debug\Prova_de_Nivelamento_(POO).exe.config
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Prova_de_Nivelamento_(POO)\bin\Debug\Prova_de_Nivelamento_(POO).exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Prova_de_Nivelamento_(POO)\bin\Debug\Prova_de_Nivelamento_(POO).pdb
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Prova_de_Nivelamento_(POO)\obj\Debug\Prova_de_Nivelamento_(POO).csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Prova_de_Nivelamento_(POO)\obj\Debug\Prova_de_Nivelamento_(POO).csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Prova_de_Nivelamento_(POO)\obj\Debug\Prova_de_Nivelamento_(POO).exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Prova_de_Nivelamento_(POO)\obj\Debug\Prova_de_Nivelamento_(POO).pdb
