@@ -77,7 +77,7 @@ Os principais conceitos são:
 POO torna o código mais organizado, fácil de entender e reutilizável, como um conjunto de Lego para construir programas.
 
 <div align="left">
-  <h6><a href="#"> Voltar para o início ↺</a></h6>
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
 </div>
 
 <br>
@@ -119,7 +119,7 @@ POO torna o código mais organizado, fácil de entender e reutilizável, como um
 </table>
 
 <div align="left">
-  <h6><a href="#"> Voltar para o início ↺</a></h6>
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
 </div>
 
 <br>
