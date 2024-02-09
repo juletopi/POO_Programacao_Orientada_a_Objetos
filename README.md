@@ -41,6 +41,8 @@
   </a>
 </div>
 
+<!-- ABOUT TEACHER -->
+
 ## 👨‍🏫 Professor:
 
 <a href="">
@@ -54,7 +56,9 @@
 
 </div>
 
-<!-- OQUE É? -->
+<br>
+
+<!-- ABOUT TOPIC -->
 
 ## Programação Orientada a Objetos (P.O.O)
 
@@ -75,6 +79,8 @@ POO torna o código mais organizado, fácil de entender e reutilizável, como um
 <div align="left">
   <h6><a href="#"> Voltar para o início ↺</a></h6>
 </div>
+
+<br>
 
 <!-- AUTHOR -->
 
