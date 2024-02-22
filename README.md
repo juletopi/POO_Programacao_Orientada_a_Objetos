@@ -107,7 +107,7 @@ public class Funcionario // <-- Criação da Classe "Funcionário"
     public DateTime dataNascimento;
     public string sexo;
 
-    public int CalcularIdade() // <-- Criação dum Método que calcula a idade do duncionário
+    public int CalcularIdade() // <-- Criação dum Método que calcula a idade do funcionário
     {
         DateTime dataAtual = DateTime.Today;
         int idade = dataAtual.Year - dataNascimento.Year;
