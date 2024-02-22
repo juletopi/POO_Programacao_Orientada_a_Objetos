@@ -69,6 +69,7 @@ A Programação Orientada a Objetos (POO) é uma maneira de escrever código pen
 Os principais conceitos são:
 - **Classe**: É um modelo para criar objetos, especificando os atributos e métodos que os objetos terão.
 - **Objeto**: É uma instância de uma classe que representa uma entidade específica com dados e funcionalidades definidos pela classe.
+- **Métodos**: São as ações que um objeto pode realizar, definidos dentro das classes. Eles podem receber parâmetros, realizar operações e retornar valores, permitindo que os objetos interajam entre si e com o ambiente.
 - **Herança:** Permite que uma classe herde características de outra, evitando repetição de código.
 - **Encapsulamento:** Esconde partes do código e permite acesso apenas por métodos específicos.
 - **Polimorfismo:** Diferentes objetos podem ser tratados de maneira uniforme, mesmo sendo de classes diferentes.
@@ -80,6 +81,102 @@ POO torna o código mais organizado, fácil de entender e reutilizável, como um
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
 </div>
 
+## 📚 Conceitos Aprendidos:
+
+### 1. Classes, Objetos e Métodos
+
+> [!NOTE]\
+> *Retirado da aula de "[Software_de_Gerenciamento](---)"*
+
+<div align="left">
+
+  Nesta aula foram aprendidos:
+  - Conceitos básicos para a criação de Classes
+  - Conceitos básicos para a criação de Objetos
+  - Criação de Métodos na mesma instância das Classes
+ 
+</div>
+  
+```c#
+public class Funcionario // <-- Criação da Classe "Funcionário"
+{
+    public string nome; 
+    public string cpf;
+    public string email;
+    public string senhaAcesso;
+    public DateTime dataNascimento;
+    public string sexo;
+
+    public int CalcularIdade() // <-- Criação dum Método que calcula a idade do duncionário
+    {
+        DateTime dataAtual = DateTime.Today;
+        int idade = dataAtual.Year - dataNascimento.Year;
+
+        if (dataAtual < dataNascimento.AddYears(idade))
+        {
+            idade--;
+        }
+
+        return idade;
+    }
+}
+
+static void Main(string[] args) // <-- Main program
+{
+    // SOFTWARE DE GERENCIAMENTO - APRENDENDO A FAZER CLASSES E ATRIBUTOS
+
+    // A empresa "Plugar Tecnologia" deseja desenvolver um software para gerenciar os serviços oferecidos aos clientes.
+    // Para isso, é necessário cadastrar os clientes com os seguintes dados: Nome, CPF, Data de Nascimento e Sexo.
+    // Também é necessário cadastrar os funcionários com: Nome, CPF, E-mail, Senha de Acesso, Data de Nascimento e Sexo.
+    // Cada serviço serviço possui: Um código, Nome, Valor Estimado, Garantias e o Tempo Estimado para a realização.
+
+    // Um caixa tem um dos serviços oferecidos aos clientes em forma de vendas, cada venda tem uma Data, Horário,
+    // Valor Total, Cliente, os Serviços Oferecidos e um Caixa de ata de abertura, uma Data de Fechamento,
+    // um Funcionário Responsável, Valor de Abertura, Status (Aberto ou Fechado) e o Saldo Final.
+
+    // -------------------------------------------------------------------------------
+
+    Funcionario f1 = new Funcionario(); // <-- Criando um novo objeto para a classe e atribuindo valores
+    f1.nome = "Bernado";
+    f1.cpf = "011.900.605-12";
+    f1.email = "bernadin1101@gmail.com";
+    f1.senhaAcesso = "090001";
+    f1.dataNascimento = new DateTime(1998, 11, 01);
+    f1.sexo = "M";
+    int idade = f1.CalcularIdade();
+
+    Console.Write("\r\n ┌────────────────────────────────────────┐");
+    Console.Write("\r\n │ Calculando a idade dos funcionários... │");
+    Console.Write("\r\n └────────────────────────────────────────┘\r\n");
+
+    Console.WriteLine($" A idade do(a) funcionário(a) {f1.nome} é {idade} anos.");
+
+    Funcionario f2 = new Funcionario();
+    f2.nome = "Túlio";
+    f2.cpf = "073.743.623-24";
+    f2.email = "tuliomurilo03@gamil.com";
+    f2.senhaAcesso = "090002";
+    f2.dataNascimento = new DateTime(2003, 01, 17);
+    f2.sexo = "M";
+    idade = f2.CalcularIdade();
+    Console.WriteLine($" A idade do(a) funcionário(a) {f2.nome} é {idade} anos.");
+
+    Funcionario f3 = new Funcionario();
+    f3.nome = "Letícia";
+    f3.cpf = "061.807.612-14";
+    f3.email = "kirbystar99@gmail.com";
+    f3.senhaAcesso = "090003";
+    f3.dataNascimento = new DateTime(2000, 01, 30);
+    f3.sexo = "F";
+    idade = f3.CalcularIdade();
+    Console.WriteLine($" A idade do(a) funcionário(a) {f3.nome} é {idade} anos.");
+
+    Console.ReadKey();
+}
+```
+<div align="left">
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
+  
 <br>
 
 <!-- AUTHOR -->
