@@ -41,6 +41,25 @@
   </a>
 </div>
 
+<br>
+
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
+</div>
+
+<!-- SUMMARY -->
+
+<h2 align="center">Sumário 🧾</h2>
+
+<div align="center">
+  <p align="center">
+    <a href="#-professor">Professor</a> &#xa0; | &#xa0;
+    <a href="#o-que-é-isso">P.O.O, o que é isso?</a> &#xa0; | &#xa0;
+    <a href="#1-classes-objetos-e-métodos">Conceitos Aprendidos 1</a> &#xa0; | &#xa0;
+    <a href="#-autor">Autor</a>
+  </p>
+</div>
+
 <!-- ABOUT TEACHER -->
 
 ## 👨‍🏫 Professor:
@@ -57,6 +76,10 @@
 </div>
 
 <br>
+
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
+</div>
 
 <!-- ABOUT TOPIC -->
 
@@ -176,7 +199,8 @@ static void Main(string[] args) // <-- Main program
 ```
 <div align="left">
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
-  
+</div>
+
 <br>
 
 <!-- AUTHOR -->
