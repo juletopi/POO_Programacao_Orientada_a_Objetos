@@ -41,12 +41,6 @@
   </a>
 </div>
 
-<br>
-
-<div align="center">
-  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
-</div>
-
 <!-- SUMMARY -->
 
 <h2 align="center">Sumário 🧾</h2>
@@ -58,6 +52,19 @@
     <a href="#1-classes-objetos-e-métodos">Conceitos Aprendidos 1</a> &#xa0; | &#xa0;
     <a href="#-autor">Autor</a>
   </p>
+</div>
+
+<br>
+
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
+</div>
+
+<br>
+
+<div align="center">
+
+  [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula&quote=Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20%C3%A9%20como%20uma%20caixa%20de%20ferramentas%2C%20onde%20cada%20objeto%20%C3%A9%20uma%20ferramenta%20especializada%2C%20pronta%20para%20ser%20usada%20na%20constru%C3%A7%C3%A3o%20de%20um%20grande%20projeto.&author=Autor%20Desconhecido)](https://github.com/piyushsuthar/github-readme-quotes)
 </div>
 
 <!-- ABOUT TEACHER -->
