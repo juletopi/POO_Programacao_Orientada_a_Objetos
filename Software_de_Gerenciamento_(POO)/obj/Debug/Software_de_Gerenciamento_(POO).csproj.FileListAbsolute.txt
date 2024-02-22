@@ -1,0 +1,7 @@
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Software_de_Gerenciamento_(POO)\bin\Debug\Software_de_Gerenciamento_(POO).exe.config
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Software_de_Gerenciamento_(POO)\bin\Debug\Software_de_Gerenciamento_(POO).exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Software_de_Gerenciamento_(POO)\bin\Debug\Software_de_Gerenciamento_(POO).pdb
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Software_de_Gerenciamento_(POO)\obj\Debug\Software_de_Gerenciamento_(POO).csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Software_de_Gerenciamento_(POO)\obj\Debug\Software_de_Gerenciamento_(POO).csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Software_de_Gerenciamento_(POO)\obj\Debug\Software_de_Gerenciamento_(POO).exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Software_de_Gerenciamento_(POO)\obj\Debug\Software_de_Gerenciamento_(POO).pdb
