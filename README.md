@@ -109,7 +109,7 @@ POO torna o código mais organizado, fácil de entender e reutilizável, como um
 ### 1. Classes, Objetos e Métodos
 
 > [!NOTE]\
-> *Retirado da aula de "[Software_de_Gerenciamento](---)"*
+> *Retirado da aula de "[Software_de_Gerenciamento_(POO)](https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/blob/main/Software_de_Gerenciamento_(POO)/Program.cs)"*
 
 <div align="left">
 
