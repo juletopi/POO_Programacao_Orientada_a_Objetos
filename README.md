@@ -121,6 +121,12 @@ POO torna o código mais organizado, fácil de entender e reutilizável, como um
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
 </div>
 
+<br>
+
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
+</div>
+
 <!-- LEARNED CONCEPTS -->
 
 ## 📚 Conceitos Aprendidos:
