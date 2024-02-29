@@ -1,0 +1,7 @@
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Cadastro_de_Alunos_(POO)\bin\Debug\Cadastro_de_Alunos_(POO).exe.config
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Cadastro_de_Alunos_(POO)\bin\Debug\Cadastro_de_Alunos_(POO).exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Cadastro_de_Alunos_(POO)\bin\Debug\Cadastro_de_Alunos_(POO).pdb
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Cadastro_de_Alunos_(POO)\obj\Debug\Cadastro_de_Alunos_(POO).csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Cadastro_de_Alunos_(POO)\obj\Debug\Cadastro_de_Alunos_(POO).csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Cadastro_de_Alunos_(POO)\obj\Debug\Cadastro_de_Alunos_(POO).exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Cadastro_de_Alunos_(POO)\obj\Debug\Cadastro_de_Alunos_(POO).pdb
