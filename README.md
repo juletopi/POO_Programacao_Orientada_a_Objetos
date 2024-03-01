@@ -18,7 +18,7 @@
 <!-- PRESENTATION -->
 
 <div align="center">
-    <a href="https://github.com/juletopi/Algoritmos_e_Logica_de_Programacao/blob/main/Assets/Images/Algorithms-pic.png">
+    <a href="https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/blob/main/Assets/POO-pic.png">
         <img src="https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/assets/76459155/3bc0342c-d326-42c2-a8e3-502805e413d9" alt="POO-pic" width="130px" title="Repositório de Programação Orientada a Objetos">
     </a>
     <h2 align="center">Programação Orientada a Objetos 🧩</h2>
@@ -81,7 +81,7 @@
 
 ## 👨‍🏫 Professor:
 
-<a href="">
+<a href="https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/blob/main/Assets/EliasAbreu-pic.png">
   <img align="left" height="135px" width="135px" alt="EliasAbreu-pic" title="Professor Elias de Abreu" src="https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/assets/76459155/9f7a51ff-83bf-4d2c-8686-9e2abe230977">
 </a>
 
