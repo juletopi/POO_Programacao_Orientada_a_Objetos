@@ -1,0 +1,7 @@
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\ProvaAlunos\bin\Debug\ProvaAlunos.exe.config
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\ProvaAlunos\bin\Debug\ProvaAlunos.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\ProvaAlunos\bin\Debug\ProvaAlunos.pdb
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\ProvaAlunos\obj\Debug\ProvaAlunos.csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\ProvaAlunos\obj\Debug\ProvaAlunos.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\ProvaAlunos\obj\Debug\ProvaAlunos.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\ProvaAlunos\obj\Debug\ProvaAlunos.pdb

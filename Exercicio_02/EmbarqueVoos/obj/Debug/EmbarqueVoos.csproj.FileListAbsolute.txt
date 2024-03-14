@@ -1,0 +1,7 @@
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\EmbarqueVoos\bin\Debug\EmbarqueVoos.exe.config
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\EmbarqueVoos\bin\Debug\EmbarqueVoos.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\EmbarqueVoos\bin\Debug\EmbarqueVoos.pdb
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\EmbarqueVoos\obj\Debug\EmbarqueVoos.csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\EmbarqueVoos\obj\Debug\EmbarqueVoos.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\EmbarqueVoos\obj\Debug\EmbarqueVoos.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_02\EmbarqueVoos\obj\Debug\EmbarqueVoos.pdb
