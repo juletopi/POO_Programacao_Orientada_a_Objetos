@@ -259,6 +259,8 @@ static void Main(string[] args)
     // selecione que não deseja mais cadastrar nenhum aluno, assim finalizando o cadastro e
     // mostrando uma lista de todos cadastrados com seus respectivos Nomes, CPFs e Emails.
 
+    // -------------------------------------------------------------------------------
+
     List<Aluno> alunos = new List<Aluno>(); // <-- Lista para armazenar os alunos cadastrados
 
     Console.Write("\r\n ┌────────────────────┐");
