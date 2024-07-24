@@ -310,6 +310,123 @@ static void Main(string[] args)
 
 <br>
 
+<div align="center">
+  
+| <h3 align="center">⚠️ AVISO</h3> |
+|:---------------------------------|
+| <p><div align="center">A partir deste ponto em diante, devido a greve das <br>universidades federais em 2024, o conteúdo da disciplina será reestudado. </p> |
+
+</div>
+<br>
+
+### 3. Revisão de P.O.O 1
+
+> [!NOTE]\
+> *Retirado da aula de "[RevisaoPOO](https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/tree/main/RevisaoPOO)"*
+
+<div align="left">
+
+  - Nesta aula foram revisionados:
+    - Classes, Objetos e Atributos
+    - Visibilidade (Modificador de Acesso)
+    - Métodos, Métodos Construtores
+    - Encapsulamento (Get e Set)
+ 
+</div>
+  
+```c#
+public class Aluno // <-- Classe "Aluno"
+{
+    // Atributos da classe "Aluno"
+    public string nome; // <-- Nome do aluno
+    public DateTime dataNasc; // <-- Data de nascimento do aluno
+    public int idade; // <-- Idade do aluno
+
+    // Método construtor da classe "Aluno"
+    public Aluno(string nome, DateTime dataNasc) 
+    {
+        this.nome = nome; // <-- Parâmetro do atributo "nome"
+        this.dataNasc = dataNasc; // <-- Parâmetro do atributo "dataNasc"
+
+        // Calcula a idade do aluno com base no ano atual e no ano de nascimento do aluno
+        idade = DateTime.Now.Year - dataNasc.Year;
+
+        // Ajusta a idade caso a data de aniversário do aluno ainda não chegou no ano corrente
+        if (DateTime.Now.DayOfYear < dataNasc.DayOfYear)
+        {
+            idade--; // <-- Reduz 1 ano se o aluno ainda não fez aniversário este ano
+        }
+    }
+
+    // Método para exibir informações do aluno
+    public void ExibirInformacoes()
+    {
+        Console.WriteLine($"Nome: {nome}"); // <-- Exibe o nome do aluno
+        Console.WriteLine($"Data de Nascimento: {dataNasc.ToShortDateString()}"); // <-- Exibe a data de nascimento do aluno formatada como string
+        Console.WriteLine($"Idade: {idade}"); // <-- Exibe a idade do aluno
+    }
+}
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        // Solicita ao usuário o nome do aluno
+        Console.Write("Digite o nome do aluno: ");
+        string nome = Console.ReadLine();
+
+        // Solicita ao usuário a data de nascimento do aluno
+        Console.Write("Digite a data de nascimento do aluno (dd/MM/yyyy): ");
+        DateTime dataNasc;
+
+        // Tenta converter a entrada do usuário para DateTime até que uma data válida seja fornecida
+        while (!DateTime.TryParse(Console.ReadLine(), out dataNasc))
+        {
+            Console.Write("Data inválida. Digite a data de nascimento do aluno (dd/MM/yyyy): ");
+        }
+
+        // Criação de um objeto da classe "Aluno"
+        Aluno a1 = new Aluno(nome, dataNasc);
+
+        // Chama o método para exibir as informações do aluno
+        a1.ExibirInformacoes();
+
+        Console.ReadKey();
+    }
+}
+```
+Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no código:
+
+### 1. **Classes**
+- **Definição**: Uma classe é um molde para criar objetos. Define atributos e métodos que os objetos dessa classe terão.
+- **Exemplo no código**: `public class Aluno` define uma classe chamada `Aluno`.
+
+### 2. **Objetos**
+- **Definição**: Um objeto é uma instância de uma classe.
+- **Exemplo no código**: `Aluno a1 = new Aluno(nome, dataNasc);` cria uma instância da classe `Aluno`.
+
+### 3. **Atributos**
+- **Definição**: Variáveis dentro de uma classe que armazenam dados.
+- **Exemplo no código**: `public string nome;`, `public DateTime dataNasc;` e `public int idade;` são atributos da classe `Aluno`.
+
+### 4. **Métodos**
+- **Definição**: Funções dentro de uma classe que definem comportamentos dos objetos.
+- **Exemplo no código**: `public void ExibirInformacoes()` é um método na classe `Aluno`.
+
+### 5. **Métodos Construtores**
+- **Definição**: Métodos especiais que são chamados quando um objeto é criado. Inicializam atributos.
+- **Exemplo no código**: `public Aluno(string nome, DateTime dataNasc)` é o construtor da classe `Aluno`.
+
+### 6. **Encapsulamento (Get e Set)**
+- **Definição**: Protege os dados de uma classe e permite acesso controlado. No exemplo dado, não há uso explícito de propriedades com `get` e `set`, mas a lógica de encapsulamento foi seguida com os atributos e métodos.
+- **Exemplo no código**: `public string nome;`, `public DateTime dataNasc;` e `public int idade;` são acessados e modificados diretamente. Em um design mais robusto, você poderia usar propriedades para encapsular esses campos.
+
+<div align="left">
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
+</div>
+
+<br>
+
 <!-- AUTHOR -->
 
 ## 👤 Autor
