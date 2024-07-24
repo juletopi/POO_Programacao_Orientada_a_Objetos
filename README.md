@@ -36,9 +36,6 @@
   <a href="https://visualstudio.microsoft.com/">
     <img src="https://img.shields.io/badge/Made%20with%20IDE:-Visual%20Studio%20-gray.svg?colorA=655BE1&amp;colorB=4F44D6&amp;style=for-the-badge" alt="VisualStudioIDE-badge" style="max-width: 100%;">
   </a>
-  <a href="https://dotnet.microsoft.com/en-us/languages/csharp">
-    <img src="https://img.shields.io/badge/Made%20with%20IDE:-MySQL%20-gray.svg?colorA=28679f&amp;colorB=e4a423&amp;style=for-the-badge" alt="MySQLIDE-badge" style="max-width: 100%;">
-  </a>
 </div>
 <div align="center">
   <a href="https://dotnet.microsoft.com/en-us/languages/csharp">
