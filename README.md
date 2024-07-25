@@ -423,6 +423,157 @@ Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no c
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
 </div>
 
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
+</div>
+
+### 4. Revisão de P.O.O 2
+
+> [!NOTE]\
+> *Retirado da aula de "[RevisaoPOO2](https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/tree/main/RevisaoPOO2)"*
+
+<div align="left">
+
+  - Nesta aula foram revisionados "Listas":
+    - Criação de listas
+    - Manipulação de listas
+    - Exibição dos resultados destas listas
+ 
+</div>
+  
+```c#
+public class Alunos // <-- Classe Alunos
+{
+    // Atributos da classe Alunos
+    public string nome;
+    public int matricula;
+    public string cpf;
+    public string email;
+    public DateTime dataNasc;
+
+    // Método construtor da classe Alunos
+    public Alunos (string alunoNome, int alunoMatricula, string alunoCPF, string alunoEmail, DateTime alunoDataNasc)
+    {
+        nome = alunoNome;
+        matricula = alunoMatricula;
+        cpf = alunoCPF;
+        email = alunoEmail;
+        dataNasc = alunoDataNasc;
+    }
+
+    // Sobrescrevendo o método ToString para fornecer uma representação em string dos dados do aluno
+    public override string ToString()
+    {
+        return "Nome: " + nome + " - " + "Matrícula: " + matricula + " - " + "CPF: " + cpf + " - " + "E-mail: " + email + " - " + "Data de Nascimento: " + dataNasc.ToString();
+    }
+}
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        // Criação de uma lista de objetos da classe Alunos
+        List<Alunos> listAlunos = new List<Alunos>();
+
+        // Criação de objetos da classe Alunos
+        Alunos aluno1 = new Alunos("Rafaela", 048, "625552980-20", "rafa022@gmail.com", new DateTime(2001, 09, 12));
+        Alunos aluno2 = new Alunos("Júlio", 027, "073743612-38", "julio03@gmail.com", new DateTime(2003, 09, 17));
+        Alunos aluno3 = new Alunos("Breno", 089, "390900176-46", "brenopd@gmail.com", new DateTime(2005, 09, 01));
+        Alunos aluno4 = new Alunos("Iberê", 021, "192236608-36", "tenoriomm@gmail.com", new DateTime(1998, 11, 21));
+        Alunos aluno5 = new Alunos("João", 055, "902630047-18", "jaovictor001@gmail.com", new DateTime(1991, 07, 03));
+
+        // Adicionando os objetos Alunos à lista
+        listAlunos.Add(aluno1);
+        listAlunos.Add(aluno2);
+        listAlunos.Add(aluno3);
+        listAlunos.Add(aluno4);
+        listAlunos.Add(aluno5);
+
+        // Exibindo todos os alunos da lista
+        Console.WriteLine("Exibindo a lista de alunos:\r\n");
+        foreach (Alunos alunos in listAlunos)
+        {
+            Console.WriteLine(alunos.ToString());
+        }
+        Console.WriteLine("\r\n---------------------------------------------\r\n");
+
+        // Buscando e exibindo um aluno específico pela matrícula
+        Console.WriteLine("Exibindo a busca por um aluno específico:\r\n");
+        Alunos search = listAlunos.Find(x => x.matricula == 027);
+        Console.WriteLine(search.ToString());
+        Console.WriteLine("\r\n---------------------------------------------\r\n");
+
+        // Buscando e exibindo alunos com número de matrícula maior que 40
+        Console.WriteLine("Exibindo a lista de alunos com o número de matrícula maior que 40:\r\n");
+        List<Alunos> searchList = listAlunos.Where(x => x.matricula > 40).ToList();
+        foreach (Alunos alunos in searchList)
+        {
+            Console.WriteLine(alunos.ToString());
+        }
+        Console.WriteLine("\r\n---------------------------------------------\r\n");
+
+        // Buscando e exibindo o maior número de matrícula
+        Console.WriteLine("Exibindo o maior número de matrícula:\r\n");
+        int b = listAlunos.Max(x => x.matricula);
+        Console.WriteLine(b);
+        Console.WriteLine("\r\n---------------------------------------------\r\n");
+
+        // Ordenando e exibindo a lista de alunos pelo número de matrícula em ordem crescente
+        Console.WriteLine("Exibindo a lista de alunos ordenados a partir do número de matrícula em ordem crescente:\r\n");
+        List<Alunos> ordenedList = listAlunos.OrderBy(x => x.matricula).ToList();
+        foreach (Alunos alunos in ordenedList)
+        {
+            Console.WriteLine(alunos.ToString());
+        }
+        Console.WriteLine("\r\n---------------------------------------------\r\n");
+
+        // Buscando e exibindo alunos cujos nomes contêm a letra 'e'
+        Console.WriteLine("Exibindo a busca por alunos com a letra 'e' em seus nomes:\r\n");
+        List<Alunos> distinctiveList = listAlunos.Where(x => x.nome.ToLower().Contains("e")).ToList();
+        foreach (Alunos alunos in distinctiveList)
+        {
+            Console.WriteLine(alunos.ToString());
+        }
+        Console.WriteLine("\r\n---------------------------------------------\r\n");
+
+        // Buscando e exibindo alunos cujos nomes começam com a letra 'j'
+        Console.WriteLine("Exibindo a busca por alunos com nomes que começam com a letra 'j':\r\n");
+        List<Alunos> startsWithList = listAlunos.Where(x => x.nome.ToLower().StartsWith("j")).ToList();
+        foreach (Alunos alunos in startsWithList)
+        {
+            Console.WriteLine(alunos.ToString());
+        }
+
+        Console.ReadKey();
+    }
+}
+```
+Vamos completar os conceitos aprendidos e como eles foram aplicados no código:
+
+### 1. **Listas**
+- **Definição**: Listas são coleções genéricas que podem armazenar elementos de um tipo específico e fornecer métodos para manipulação de dados.
+- **Exemplo no código**: `List<Alunos> listAlunos` cria uma lista para armazenar objetos da classe `Alunos`. Métodos como `Add`, `Find`, `Where`, `OrderBy`, `Max`, e `ToList` são usados para manipular a lista, como adicionar elementos, buscar, filtrar, ordenar e encontrar o valor máximo.
+
+### 2. **LINQ (Language Integrated Query)**
+- **Definição**: LINQ é uma tecnologia para realizar consultas a coleções de dados de maneira declarativa, integrando capacidades de consulta diretamente na linguagem C#.
+- **Exemplo no código**: Exemplos incluem:
+  - `Find(x => x.matricula == 027)` para encontrar um aluno específico pela matrícula.
+  - `Where(x => x.matricula > 40).ToList()` para filtrar alunos com número de matrícula maior que 40.
+  - `OrderBy(x => x.matricula).ToList()` para ordenar os alunos pelo número de matrícula.
+  - `Max(x => x.matricula)` para encontrar o maior número de matrícula.
+  - `Where(x => x.nome.ToLower().Contains("e")).ToList()` para encontrar alunos com a letra 'e' nos nomes.
+  - `Where(x => x.nome.ToLower().StartsWith("j")).ToList()` para encontrar alunos cujos nomes começam com a letra 'j'.
+
+### 3. **Entrada e Saída de Dados**
+- **Definição**: Entrada e saída de dados referem-se à interação do programa com o usuário ou outras fontes de dados, permitindo que o programa receba informações e exiba resultados.
+- **Exemplo no código**: 
+  - `Console.WriteLine` é usado para exibir mensagens e resultados das operações realizadas na lista.
+  - `Console.ReadKey` é usado para pausar a execução do programa até que uma tecla seja pressionada, permitindo ao usuário ver os resultados antes que o programa feche.
+
+<div align="left">
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
+</div>
+
 <br>
 
 <!-- AUTHOR -->
