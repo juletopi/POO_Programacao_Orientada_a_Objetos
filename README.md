@@ -54,10 +54,11 @@
   <p align="center">
     <a href="#-professor">Professor</a> &#xa0; | &#xa0;
     <a href="#o-que-é-isso">Sobre o tópico</a> &#xa0; | &#xa0;
-    <a href="#1-classes-objetos-e-métodos">Conceitos Aprendidos 1</a>
+    <a href="#1-classes-objetos-e-métodos">Conceitos Aprendidos 1</a> &#xa0; | &#xa0;
+    <a href="#2-listas-e-classes">Conceitos Aprendidos 2</a>
    </p>
-    <a href="#2-listas-e-classes">Conceitos Aprendidos 2</a> &#xa0; | &#xa0;
     <a href="#3-revisão-de-poo-1">Revisão de P.O.O 1</a> &#xa0; | &#xa0;
+    <a href="#4-revisão-de-poo-2">Revisão de P.O.O 2</a> &#xa0; | &#xa0;
     <a href="#-autor">Autor</a>
   </p>
 </div>
