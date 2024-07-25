@@ -1,0 +1,7 @@
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\RevisaoPOO2\bin\Debug\RevisaoPOO2.exe.config
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\RevisaoPOO2\bin\Debug\RevisaoPOO2.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\RevisaoPOO2\bin\Debug\RevisaoPOO2.pdb
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\RevisaoPOO2\obj\Debug\RevisaoPOO2.csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\RevisaoPOO2\obj\Debug\RevisaoPOO2.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\RevisaoPOO2\obj\Debug\RevisaoPOO2.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\RevisaoPOO2\obj\Debug\RevisaoPOO2.pdb
