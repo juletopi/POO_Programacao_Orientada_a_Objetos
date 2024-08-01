@@ -335,10 +335,10 @@ static void Main(string[] args)
 
 <div align="left">
 
-  - Nesta aula foram revisionados:
+  - Nesta aula foram revisionados os "conceitos básicos" de P.O.O:
     - Classes, Objetos e Atributos
     - Visibilidade (Modificador de Acesso)
-    - Métodos, Métodos Construtores
+    - Métodos e Métodos Construtores
     - Encapsulamento (Get e Set)
  
 </div>
