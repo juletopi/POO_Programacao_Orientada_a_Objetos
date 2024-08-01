@@ -27,8 +27,8 @@
 <div align="center">
  
   • Este é um repositório com o conteúdo das aulas de Programação Orientada a Objetos, \
-  ministradas pelo professor [**Elias de Abreu**](https://www.linkedin.com/in/elias-de-abreu-domingos-da-silva-843748262/), utilizando o **Visual Studio** e \
-  **MySQL** como ferramentas de aprendizado.
+  ministradas pelo professor [**Elias de Abreu**](https://www.linkedin.com/in/elias-de-abreu-domingos-da-silva-843748262/), utilizando o **Visual Studio**, linguagem \
+  **CSharp** e framework **.NET Framework** como ferramentas de aprendizado.
  
 </div>
 
