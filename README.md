@@ -549,7 +549,7 @@ internal class Program
     }
 }
 ```
-Vamos completar os conceitos aprendidos e como eles foram aplicados no código:
+Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no código:
 
 ### 1. **Listas**
 - **Definição**: Listas são coleções genéricas que podem armazenar elementos de um tipo específico e fornecer métodos para manipulação de dados.
@@ -570,6 +570,140 @@ Vamos completar os conceitos aprendidos e como eles foram aplicados no código:
 - **Exemplo no código**: 
   - `Console.WriteLine` é usado para exibir mensagens e resultados das operações realizadas na lista.
   - `Console.ReadKey` é usado para pausar a execução do programa até que uma tecla seja pressionada, permitindo ao usuário ver os resultados antes que o programa feche.
+
+<div align="left">
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
+</div>
+
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
+</div>
+
+### 5. Revisão de P.O.O 3
+
+> [!NOTE]\
+> *Retirado da aula de "[RevisaoPOO3](https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/tree/main/RevisaoPOO3)"*
+
+<div align="left">
+
+  - Nesta aula foram revisionados "Heranças":
+    - Criação de heranças (Classes "pai" e classes "filho")
+    - Polimorfismo
+    - Métodos Virtuais e Override
+ 
+</div>
+  
+```c#
+public class Cliente // <-- Classe Base "pai" Cliente
+{
+    // Propriedades comuns a todos os clientes
+    public string ID { get; set; }
+    public string Nome { get; set; }
+    public string Email { get; set; }
+    public string Telefone { get; set; }
+
+    // Método virtual que pode ser sobrescrito nas classes derivadas para cadastrar as informações do cliente
+    public virtual void Cadastrar()
+    {
+        // Este método será implementado nas classes derivadas...
+    }
+
+    // Método virtual que pode ser sobrescrito para exibir informações do cliente
+    public virtual void ExibirInformacoes()
+    {
+        Console.WriteLine($"ID: {ID} - Nome: {Nome} - Email: {Email} - Telefone: {Telefone}");
+    }
+}
+
+public class ClientePJ : Cliente // <-- Classe Derivada "filho" ClientePJ
+{
+    // Propriedades específicas para clientes pessoa jurídica (PJ)
+    public string CNPJ { get; set; }
+    public string RazaoSocial { get; set; }
+    public string NomeFantasia { get; set; }
+
+    // Implementação do método para cadastrar informações do cliente PJ
+    public override void Cadastrar()
+    {
+        Console.Write("Digite o ID: ");
+        ID = Console.ReadLine();
+
+        Console.Write("Digite o Nome: ");
+        Nome = Console.ReadLine();
+
+        Console.Write("Digite o Email: ");
+        Email = Console.ReadLine();
+
+        Console.Write("Digite o Telefone: ");
+        Telefone = Console.ReadLine();
+
+        Console.Write("Digite o CNPJ: ");
+        CNPJ = Console.ReadLine();
+
+        Console.Write("Digite a Razão Social: ");
+        RazaoSocial = Console.ReadLine();
+
+        Console.Write("Digite o Nome Fantasia: ");
+        NomeFantasia = Console.ReadLine();
+    }
+
+    // Método para exibir informações do cliente PJ
+    public override void ExibirInformacoes()
+    {
+        base.ExibirInformacoes(); // <-- Chamando o método da classe base para exibir informações comuns
+        Console.WriteLine($"CNPJ: {CNPJ} - Razão Social: {RazaoSocial} - Nome Fantasia: {NomeFantasia}");
+    }
+}
+
+public class ClientePF : Cliente // <-- Classe Derivada "filho" ClientePF
+{
+    // Propriedades específicas para clientes pessoa física (PF)
+    public string CPF { get; set; }
+    public string FormacaoAcademica { get; set; }
+
+    // Implementação do método para cadastrar informações do cliente PF
+    public override void Cadastrar()
+    {
+        Console.Write("Digite o ID: ");
+        ID = Console.ReadLine();
+
+        Console.Write("Digite o Nome: ");
+        Nome = Console.ReadLine();
+
+        Console.Write("Digite o Email: ");
+        Email = Console.ReadLine();
+
+        Console.Write("Digite o Telefone: ");
+        Telefone = Console.ReadLine();
+
+        Console.Write("Digite o CPF: ");
+        CPF = Console.ReadLine();
+
+        Console.Write("Digite a Formação Acadêmica: ");
+        FormacaoAcademica = Console.ReadLine();
+    }
+
+    // Método para exibir informações do cliente PF
+    public override void ExibirInformacoes()
+    {
+        base.ExibirInformacoes(); // <-- Chamando o método da classe base para exibir informações comuns
+        Console.WriteLine($"CPF: {CPF} - Formação Acadêmica: {FormacaoAcademica}");
+    }
+}
+```
+Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no código:
+
+### 1. **Herança**
+- **Definição**: Herança é um princípio da P.O.O. que permite que uma classe derivada (filho) herde atributos e métodos de outra classe base (pai), promovendo a reutilização de código.
+- **Exemplo no código**: `public class ClientePJ : Cliente` e `public class ClientePF : Cliente`. Aqui, `ClientePJ` e `ClientePF` herdam propriedades e métodos da classe `Cliente`, como `ID`, `Nome`, `Email`, e `Telefone`.
+
+### 2. **Polimorfismo**
+- **Definição**: Polimorfismo permite que métodos em classes derivadas tenham diferentes implementações com a mesma assinatura de método na classe base, permitindo que o mesmo método se comporte de maneira diferente.
+- **Exemplo no código**: O método `Cadastrar` e `ExibirInformacoes` são sobrescritos (`override`) em `ClientePJ` e `ClientePF` para fornecer funcionalidades específicas para cada tipo de cliente. Por exemplo, `Cadastrar` em `ClientePJ` inclui a solicitação de `CNPJ`, enquanto em `ClientePF` inclui `CPF`.
+
+### 3. **Métodos Virtuais e Override**
+- **Definição**: Métodos virtuais são métodos na classe base que podem ser sobrescritos nas classes derivadas usando a palavra-chave `override`, permitindo que a classe derivada forneça uma implementação específica.
+- **Exemplo no código**: `public virtual void Cadastrar()` na classe `Cliente` é um método virtual que é sobrescrito (`override`) nas classes `ClientePJ` e `ClientePF` com suas próprias implementações específicas.
 
 <div align="left">
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
