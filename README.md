@@ -59,6 +59,7 @@
    </p>
     <a href="#3-revisão-de-poo-1">Revisão de P.O.O 1</a> &#xa0; | &#xa0;
     <a href="#4-revisão-de-poo-2">Revisão de P.O.O 2</a> &#xa0; | &#xa0;
+    <a href="#5-revisão-de-poo-3">Revisão de P.O.O 3</a> &#xa0; | &#xa0;
     <a href="#-autor">Autor</a>
   </p>
 </div>
