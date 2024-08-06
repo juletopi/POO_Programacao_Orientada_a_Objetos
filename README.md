@@ -53,7 +53,7 @@
 <div align="center">
   <p align="center">
     <a href="#-professor">Professor</a> &#xa0; | &#xa0;
-    <a href="#o-que-é-isso">Sobre o tópico</a> &#xa0; | &#xa0;
+    <a href="#-programação-orientada-a-objetos-poo">Sobre o tópico</a> &#xa0; | &#xa0;
     <a href="#1-classes-objetos-e-métodos">Conceitos Aprendidos 1</a> &#xa0; | &#xa0;
     <a href="#2-listas-e-classes">Conceitos Aprendidos 2</a>
    </p>
@@ -100,13 +100,13 @@
 
 <!-- ABOUT TOPIC -->
 
-## Programação Orientada a Objetos (P.O.O)
+## 🌟 Programação Orientada a Objetos (P.O.O)
 
-### O que é isso?
+### ❓ O que é isso?
 
 A Programação Orientada a Objetos (P.O.O) é uma maneira de escrever código pensando em objetos interconectados, cada um com suas próprias características e habilidades. Isso nos ajuda a organizar o código de forma lógica, dividindo-o em classes e objetos. 
 
-### Principais Conceitos
+### 📋 Principais Conceitos
 
 - **🧩 Classe**: É um modelo para criar "objetos", especificando os "atributos" e "métodos" que os objetos terão.
   - **🔖 Atributos**: São as características ou propriedades de uma classe. Eles definem o estado ou dados que os objetos dessa classe podem ter.
@@ -124,7 +124,7 @@ A Programação Orientada a Objetos (P.O.O) é uma maneira de escrever código p
 
 ---
 
-P.O.O torna o código mais organizado, fácil de entender e reutilizável, principalmente em programas maiores e mais extensos onde se há centenas e centenas de linhas de código. É como se tivéssemos uma pilha de roupas e as separamos em um armário com cada compartimento indo um tipo de roupa diferente para assim nos organizarmos melhor.
+P.O.O torna o código mais organizado, fácil de entender e reutilizável, principalmente em programas maiores e mais complexos onde há centenas e centenas de linhas de código. É como se tivéssemos uma pilha de roupas e as separássemos em um armário com cada compartimento para um tipo de roupa diferente, assim conseguimos nos organizar melhor ao trabalharmos com programação.
 
 <div align="left">
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
