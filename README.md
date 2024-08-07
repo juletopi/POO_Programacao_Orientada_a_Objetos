@@ -113,9 +113,10 @@ A Programação Orientada a Objetos (P.O.O) é uma maneira de escrever código p
   - **🔍 Objeto**: É uma "instância" de uma classe que representa uma entidade específica com dados e funcionalidades definidos pela classe.
   - **📦 Instância**: É um objeto concreto criado a partir de uma classe. Cada instância de uma classe pode ter diferentes valores para seus atributos, mesmo que compartilhem a mesma estrutura e comportamento definidos pela classe.
 
-- **⚙️ Métodos**: São as ações que um objeto pode realizar, definidos dentro das classes. Eles podem receber parâmetros, realizar operações e retornar valores, permitindo que os objetos interajam entre si e com o ambiente. Um tipo especial de método é o "Método Construtor".
+- **⚙️ Métodos**: São as ações que um objeto pode realizar, definidos dentro das classes. Eles podem receber parâmetros, realizar operações e retornar valores, permitindo que os objetos interajam entre si e com o ambiente. Tipos especiais de métodos são "Método Construtor" e "Método Virtual".
   - **🏗️ Método Construtor**: É um tipo especial de método que é chamado automaticamente quando uma nova instância de uma classe é criada. Ele tem o mesmo nome da classe, não possui tipo de retorno, e seu principal objetivo é inicializar os atributos do objeto. Os construtores podem ser "sobrecarregados", ou seja, pode haver mais de um construtor com diferentes parâmetros na mesma classe.
   - **🔄 Sobrecarga de Método**: É uma característica que permite que uma classe tenha mais de um método com o mesmo nome, mas com diferentes assinaturas (número ou tipo de parâmetros). A sobrecarga de método facilita a criação de métodos que executam funções similares, mas com diferentes tipos ou números de parâmetros.
+  - **🌀 Método Virtual**: São métodos definidos em uma classe base que podem ser substituídos por métodos nas classes derivadas. Eles permitem que as classes derivadas forneçam uma implementação específica para o método. Em P.O.O, classes bases e classes derivadas são um conceito de "herança".
 
 - **🧬 Herança**: Permite que uma classe herde características de outra, evitando repetição de código.
 - **🔒 Encapsulamento**: Esconde partes do código e permite acesso apenas por métodos específicos.
