@@ -1,0 +1,7 @@
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_05\bin\Debug\Exercicio_05.exe.config
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_05\bin\Debug\Exercicio_05.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_05\bin\Debug\Exercicio_05.pdb
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_05\obj\Debug\Exercicio_05.csproj.AssemblyReference.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_05\obj\Debug\Exercicio_05.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_05\obj\Debug\Exercicio_05.exe
+C:\Users\julio\source\repos\Visual Studio\CSharp\P.O.O\Exercicio_05\obj\Debug\Exercicio_05.pdb
