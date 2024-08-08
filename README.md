@@ -720,6 +720,86 @@ Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no c
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
 </div>
 
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=8354d2&height=4&section=header&%20render">
+</div>
+
+### 6. Revisão de P.O.O 4
+
+> [!NOTE]\
+> *Retirado da aula de "[RevisaoPOO4](https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/tree/main/RevisaoPOO4)"*
+
+<div align="left">
+
+  - Nesta aula foram revisionados "Exceções":
+    - Conceito de exceções
+    - Uso de exceções para casos de erro por interação do usuário
+ 
+</div>
+  
+```c#
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        bool continuar = true;
+
+        while (continuar)
+        {
+            try // <-- Início do bloco 'try-catch' para capturar 'Exceções'
+            {
+                Console.Write("Digite o primeiro número: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Digite o segundo número: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                int resultado = num1 / num2;
+
+                Console.WriteLine($"\r\nResultado: {resultado}");
+            }
+            catch (DivideByZeroException) // <-- Exceção lançada quando ocorre uma tentativa de divisão por zero.
+            {
+                Console.WriteLine("\r\nErro: Divisão por zero não é permitida!");
+            }
+            catch (FormatException) // Exceção lançada quando a conversão de um tipo de dado para outro falha.
+            {
+                Console.WriteLine("\r\nErro: Entrada inválida. Por favor, insira um número inteiro!");
+            }
+
+            Console.Write("\r\nDeseja realizar outra operação? (s/n): ");
+            string resposta = Console.ReadLine().ToLower();
+            Console.WriteLine("\r\n---------------------------------------------\r\n");
+
+            if (resposta != "s")
+            {
+                continuar = false;
+            }
+        }
+        Console.WriteLine("Finalizando a aplicação...");
+
+        Console.ReadKey();
+    }
+}
+```
+Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no código:
+
+### 1. **Exceções**
+- **Definição**: Exceções são eventos que ocorrem durante a execução de um programa e que interrompem o fluxo normal de instruções, se não forem tratadas. Elas são usadas para indicar e tratar erros.
+- **Exemplo no código**: No bloco `try-catch`, foram capturadas exceções específicas, como `DivideByZeroException` e `FormatException`, para lidar com erros de divisão por zero e de formato de entrada inválido, respectivamente.
+
+### 2. **DivideByZeroException**
+- **Definição**: Uma exceção lançada quando ocorre uma tentativa de dividir um número por zero.
+- **Exemplo no código**: `catch (DivideByZeroException)`. Isso captura a exceção e exibe uma mensagem de erro informando que a divisão por zero não é permitida.
+
+### 3. **FormatException**
+- **Definição**: Uma exceção lançada quando uma tentativa de conversão de um tipo de dado para outro falha.
+- **Exemplo no código**: `catch (FormatException)`. Isso captura a exceção e exibe uma mensagem de erro informando que a entrada foi inválida e solicitando que seja inserido um número inteiro.
+
+<div align="left">
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
+</div>
+
 <br>
 
 <!-- AUTHOR -->
