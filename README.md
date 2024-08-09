@@ -119,6 +119,7 @@ A Programação Orientada a Objetos (P.O.O) é uma maneira de escrever código p
   - **🔄 Sobrecarga de Método**: É uma característica que permite que uma classe tenha mais de um método com o mesmo nome, mas com diferentes assinaturas (número ou tipo de parâmetros). A sobrecarga de método facilita a criação de métodos que executam funções similares, mas com diferentes tipos ou números de parâmetros.
   - **🌀 Método Virtual**: São métodos definidos em uma classe base que podem ser substituídos por métodos nas classes derivadas. Eles permitem que as classes derivadas forneçam uma implementação específica para o método. Em P.O.O, classes bases e classes derivadas são um conceito de "herança".
 
+- **⚠️ Exceções**: São mecanismos para lidar com erros que ocorrem durante a execução do programa. Exceções permitem que o programa continue rodando, mesmo quando erros imprevistos acontecem. Elas são tratadas usando blocos try-catch.
 - **🧬 Herança**: Permite que uma classe herde características de outra, evitando repetição de código.
 - **🔒 Encapsulamento**: Esconde partes do código e permite acesso apenas por métodos específicos.
 - **🔀 Polimorfismo**: Diferentes objetos podem ser tratados de maneira uniforme, mesmo sendo de classes diferentes.
