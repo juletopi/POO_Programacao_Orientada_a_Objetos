@@ -122,7 +122,7 @@ A Programação Orientada a Objetos (P.O.O) é uma maneira de escrever código p
 - **⚠️ Exceções**: São mecanismos para lidar com erros que ocorrem durante a execução do programa. Exceções permitem que o programa continue rodando, mesmo quando erros imprevistos acontecem. Elas são tratadas usando blocos try-catch.
 - **🧬 Herança**: Permite que uma classe herde características de outra, evitando repetição de código.
 - **🔒 Encapsulamento**: Esconde partes do código e permite acesso apenas por métodos específicos.
-- **🔀 Polimorfismo**: Diferentes objetos podem ser tratados de maneira uniforme, mesmo sendo de classes diferentes.
+- **🔀 Polimorfismo**: Permite que diferentes objetos podem ser tratados de maneira uniforme, mesmo sendo de classes diferentes.
 - **📝 Abstração**: É o processo de identificar as características essenciais de um objeto, ignorando os detalhes irrelevantes. Isso é feito definindo classes que encapsulam o comportamento e estado das entidades do mundo real.
 
 ---
