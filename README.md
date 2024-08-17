@@ -86,7 +86,7 @@
   <img align="left" height="135px" width="135px" alt="EliasAbreu-pic" title="Professor Elias de Abreu" src="https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/assets/76459155/9f7a51ff-83bf-4d2c-8686-9e2abe230977">
 </a>
 
-  **Elias de Abreu Domingos da Silva - Entusiasta em TI | Professor de Curso Técnico e Superior** \
+  **Elias de Abreu Domingos da Silva - Entusiasta em T.I. | Perito Criminal na Área da Informática | Professor de Curso Técnico e Superior** \
   [**IFRO Campus Ji-Paraná**](https://portal.ifro.edu.br/ji-parana) • <i>Atuando desde Dezembro de 2017</i> \
   Linguagens & Tecnologias: `Visual Studio` • `MySQL` • `C#` • `SQL` • `E outros...` \
   Contato: **[Elias de Abreu (LinkedIn)](https://www.linkedin.com/in/elias-de-abreu-domingos-da-silva-843748262/)**
