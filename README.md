@@ -88,7 +88,7 @@
 
   **Elias de Abreu Domingos da Silva - Entusiasta em T.I. | Perito Criminal na Área da Informática | Professor de Curso Técnico e Superior** \
   [**IFRO Campus Ji-Paraná**](https://portal.ifro.edu.br/ji-parana) • <i>Atuando desde Dezembro de 2017</i> \
-  Linguagens & Tecnologias: `Visual Studio` • `MySQL` • `C#` • `SQL` • `E outros...` \
+  Linguagens & Tecnologias: `Visual Studio` • `MySQL` • `C#` • `PHP` • `Java` • `E outros...` \
   Contato: **[Elias de Abreu (LinkedIn)](https://www.linkedin.com/in/elias-de-abreu-domingos-da-silva-843748262/)**
 
 </div>
