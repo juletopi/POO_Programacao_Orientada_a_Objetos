@@ -839,16 +839,22 @@ Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no c
 
 Para conectar um projeto em C# ao MySQL, é necessário instalar o pacote `MySql.Data` via **NuGet**, que contém as bibliotecas necessárias para a comunicação entre a aplicação C# e o banco de dados MySQL.
 
-- **Passos para instalação**:
-  1. Abra o Gerenciador de Pacotes NuGet no Visual Studio.
-  2. Busque por `MySql.Data`.
-  3. Selecione a versão desejada e clique em "Instalar".
-  4. O pacote será adicionado ao projeto e você poderá utilizar as classes e métodos para conexão com MySQL.
+#### **Passos para instalar o pacote MySql.Data no Visual Studio**
 
-```bash
-# Comando NuGet para instalar o pacote MySql.Data
-Install-Package MySql.Data -Version 9.0.0
-```
+1. **Abrir o Gerenciador de Soluções**:
+   - No menu superior do Visual Studio, clique em `Exibir > Gerenciador de Soluções`.
+
+2. **Acessar os Pacotes NuGet**:
+   - Clique com o botão direito sobre o nome do seu projeto e selecione `Gerenciar Pacotes do NuGet`.
+
+3. **Buscar o Pacote MySql.Data**:
+   - Na aba `Procurar`, digite `MySql.Data` na barra de busca.
+
+4. **Selecionar e Instalar o Pacote**:
+   - Escolha a versão desejada do pacote e clique em `Instalar`.
+
+5. **Finalizar a Instalação**:
+   - O pacote será adicionado ao projeto, permitindo o uso das classes e métodos necessários para a conexão com MySQL.
 
 <div align="center">
   <a href="#">
@@ -858,81 +864,283 @@ Install-Package MySql.Data -Version 9.0.0
 
 ### **Uso do MySQL Workbench**
 
-O MySQL Workbench é uma ferramenta gráfica usada para modelar, gerenciar e administrar bancos de dados MySQL. Ele permite criar e modificar esquemas de banco de dados, bem como executar consultas SQL.
+O MySQL Workbench é uma ferramenta gráfica de modelação, gerenciamento e administração de bancos de dados MySQL. Além de criar e modificar esquemas de banco de dados, ele também permite executar consultas SQL e visualizar resultados de maneira interativa. E é com esta ferramenta que criaremos o nosso banco de dados.
 
-- **Passos para criar um banco de dados**:
-  1. Abra o MySQL Workbench.
-  2. Conecte-se ao servidor MySQL.
-  3. Use a interface gráfica para criar um novo banco de dados.
-  4. Crie as tabelas necessárias, especificando colunas, tipos de dados e restrições.
-  
+#### **Passos para instalar o MySQL Workbench**
+
+1. **Baixar o MySQL Workbench**:
+   - Acesse a página oficial de downloads do MySQL: [Download MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
+   - Selecione a versão adequada para o seu sistema operacional (Windows, macOS, Linux).
+
+2. **Instalar o MySQL Workbench**:
+   - Execute o arquivo baixado e siga as instruções do instalador.
+   - No Windows, é recomendado instalar o MySQL Workbench juntamente com o MySQL Installer, que facilita a instalação de outros componentes necessários.
+
+3. **Configuração Inicial**:
+   - Após a instalação, abra o MySQL Workbench.
+   - Configure a conexão com o servidor MySQL, utilizando as credenciais fornecidas durante a instalação do MySQL Server.
+
+> [!TIP]\
+> Caso tenha dificuldade durante o processo, este [vídeo tutorial](https://www.youtube.com/watch?v=IEUgVwjXF0o) pode ajudar a configurar e conectar o MySQL Workbench pela primeira vez.
+
+<div align="center">
+  <a href="#">
+    <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=151923&height=2&section=header&%20render">
+  </a>
+</div>
+
+### **Criando um banco de dados com o MySQL Workbench**
+
+Com o MySQL Workbench instalado e configurado, podemos agora criar o nosso banco de dados.
+
+#### **Passos para criar um banco de dados no MySQL Workbench**:
+
+1. **Abrir o MySQL Workbench**.
+
+3. **Conectar-se ao servidor MySQL**:
+   - Use as credenciais configuradas (nome de usuário e senha) para acessar o servidor.
+
+4. **Criar um novo banco de dados**:
+   - Na barra de menus, vá para `Database` e selecione `Create New Database...`.
+   - Defina um nome para o banco de dados e clique em `Apply`.
+
+5. **Criar tabelas e definir colunas**:
+   - Na aba `Schemas`, clique com o botão direito no banco de dados recém-criado e selecione `Create Table...`.
+   - Adicione as colunas, defina os tipos de dados, e configure restrições.
+   - Clique em `Apply` para salvar as alterações.
+
+<div align="center">
+  <a href="#">
+    <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=151923&height=2&section=header&%20render">
+  </a>
+</div>
+
+### **Criando o banco de dados em SQL**
+
 ```sql
--- Exemplo de criação de um banco de dados para gerenciamento de alunos
-CREATE DATABASE GerenciamentoAlunos;
+-- Criação do banco de dados
+CREATE DATABASE BancoDeDadosAlunos;
 
-USE GerenciamentoAlunos;
+USE BancoDeDadosAlunos;
 
+-- Criação da tabela Alunos
 CREATE TABLE Alunos (
-    Id INT AUTO_INCREMENT PRIMARY KEY,
-    Nome VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) NOT NULL,
-    DataNascimento DATE NOT NULL
+    IdAluno INT PRIMARY KEY AUTO_INCREMENT,  -- Coluna para o ID único do Aluno
+    Nome VARCHAR(100),                       -- Coluna para o Nome do Aluno
+    CPF VARCHAR(11),                         -- Coluna para o CPF do Aluno
+    Email VARCHAR(100),                      -- Coluna para o Email do Aluno
+    Telefone VARCHAR(20),                    -- Coluna para o Telefone do Aluno
+    DataNascimento DATE                      -- Coluna para a Data de Nascimento do Aluno
 );
+
+SELECT * FROM Alunos;
 ```
 
-#### 3. **Código de Conexão com MySQL**
+<div align="center">
+  <a href="#">
+    <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=151923&height=2&section=header&%20render">
+  </a>
+</div>
+
+
+### **Criando o algoritmo de banco de dados em CSharp**
 
 ```c#
-using MySql.Data.MySqlClient;
-
-internal class Program
+namespace Conexao_com_SQL__POO_.Models
 {
-    static void Main(string[] args)
+    internal class Aluno
     {
-        string connectionString = "server=localhost;database=GerenciamentoAlunos;user=root;password=sua_senha_aqui";
+        public int IdAluno { get; set; }
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public string Email { get; set; }
+        public string Telefone { get; set; }
+        public DateTime DataNascimento { get; set; }
+    }
+}
 
-        using (MySqlConnection connection = new MySqlConnection(connectionString))
+using MySql.Data.MySqlClient; // <-- Importa a biblioteca necessária para trabalhar com MySQL
+
+namespace Conexao_com_SQL__POO_
+{
+    public static class Conexao
+    {
+        static MySqlConnection conexao; // <-- Objeto responsável por controlar a conexão com a base
+        public static MySqlConnection Conectar()
         {
             try
             {
-                connection.Open();
-                Console.WriteLine("Conexão estabelecida com sucesso.");
-
-                string query = "SELECT * FROM Alunos";
-                MySqlCommand command = new MySqlCommand(query, connection);
-                MySqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    Console.WriteLine($"ID: {reader["Id"]}, Nome: {reader["Nome"]}, Email: {reader["Email"]}, Data de Nascimento: {reader["DataNascimento"]}");
-                }
+                // Texto-string de conexão com o banco de dados
+                string connectionString = "server=localhost;port=3306;uid=root;pwd=sua_senha_aqui;database=nome_do_seu_banco_de_dados_aqui";
+                conexao = new MySqlConnection(connectionString);
+                conexao.Open();
             }
-            catch (MySqlException ex)
+            catch (Exception ex)
             {
-                Console.WriteLine($"Erro de conexão: {ex.Message}");
+                Console.WriteLine("\r\nErro ao realizar a conexão com a base de dados!");
             }
+            return conexao;
+        }
+
+        // Método para fechar a conexão com o banco de dados
+        public static void FecharConexao()
+        {
+            conexao.Close();
+        }
+    }
+}
+
+using MySql.Data.MySqlClient; // <-- Importa a biblioteca necessária para trabalhar com MySQL
+using System;
+using System.Collections.Generic;
+using Conexao_com_SQL__POO_.Models;
+
+namespace Conexao_com_SQL__POO_.DAO
+{
+    internal class AlunoDAO
+    {
+        // Método para inserir um novo aluno no banco de dados
+        public void Insert(Aluno aluno)
+        {
+            try
+            {
+                // Converte a data de nascimento do aluno para o formato "yyyy-MM-dd"
+                string dataNascimento = aluno.DataNascimento.ToString("yyyy-MM-dd");
+
+                // SQL para INSERIR um novo aluno na tabela "alunos"
+                string sql = "INSERT INTO alunos(nome_alu, cpf_alu, email_alu, telefone_alu, data_nascimento_alu) " +
+                             "VALUES(@nome, @cpf, @email, @telefone, @dataNascimento)";
+
+                MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar()); // <-- Cria um comando MySQL para executar a instrução SQL
+
+                // Adiciona os parâmetros ao comando, substituindo os placeholders na SQL
+                comando.Parameters.AddWithValue("@nome", aluno.Nome);
+                comando.Parameters.AddWithValue("@cpf", aluno.CPF);
+                comando.Parameters.AddWithValue("@email", aluno.Email);
+                comando.Parameters.AddWithValue("@telefone", aluno.Telefone);
+                comando.Parameters.AddWithValue("@dataNascimento", aluno.DataNascimento);
+                comando.ExecuteNonQuery(); // <-- Executa o comando de inserção no banco de dados
+
+                Console.WriteLine("\r\nAluno cadastrado com sucesso!");
+                Conexao.FecharConexao(); // <-- Fecha a conexão com o banco de dados
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao cadastrar o aluno! {ex.Message}");
+            }
+        }
+
+        // Método para deletar um aluno do banco de dados com base no ID
+        public void Delete(Aluno aluno)
+        {
+            try
+            {
+                // SQL para DELETAR um aluno da tabela "alunos" com base no ID
+                string sql = "DELETE FROM alunos WHERE id_alu = @id_aluno";
+                MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
+
+                comando.Parameters.AddWithValue("@id_aluno", aluno.IdAluno);
+                comando.ExecuteNonQuery();
+
+                Console.WriteLine("\r\nAluno excluído com sucesso!");
+                Conexao.FecharConexao();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"\r\nErro ao excluir o aluno! {ex.Message}");
+            }
+        }
+
+        // Método para atualizar os dados de um aluno no banco de dados
+        public void Update(Aluno aluno)
+        {
+            try
+            {
+                // SQL para ATUALIZAR os dados do aluno na tabela "alunos"
+                string sql = "UPDATE alunos SET nome_alu = @nome, cpf_alu = @cpf, email_alu = @email, " +
+                             "telefone_alu = @telefone WHERE id_alu = @id_aluno";
+                MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
+
+                comando.Parameters.AddWithValue("@nome", aluno.Nome);
+                comando.Parameters.AddWithValue("@cpf", aluno.CPF);
+                comando.Parameters.AddWithValue("@email", aluno.Email);
+                comando.Parameters.AddWithValue("@telefone", aluno.Telefone);
+                comando.Parameters.AddWithValue("@id_aluno", aluno.IdAluno);
+                comando.ExecuteNonQuery();
+
+                Console.WriteLine("\r\nAluno atualizado com sucesso!");
+                Conexao.FecharConexao();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"\r\nErro ao atualizar o aluno! {ex.Message}");
+            }
+        }
+
+        // Método para listar todos os alunos cadastrados no banco de dados
+        public List<Aluno> List()
+        {
+            List<Aluno> alunos = new List<Aluno>(); // <-- Cria uma lista para armazenar os alunos
+            try
+            {
+                // SQL para SELECIONAR todos os alunos da tabela "alunos", ordenados por nome
+                var sql = "SELECT * FROM alunos ORDER BY nome_alu";
+                MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
+
+                // Executa o comando e obtém os dados retornados pelo banco
+                using (MySqlDataReader dr = comando.ExecuteReader())
+                {
+                    while (dr.Read()) // <-- Itera sobre os dados retornados e cria objetos Aluno para cada linha
+                    {
+                        Aluno aluno = new Aluno
+                        {
+                            IdAluno = dr.GetInt32("id_alu"), // <-- Atribui o ID do aluno
+                            Nome = dr.GetString("nome_alu"), // <-- Atribui o Nome do aluno
+                            Email = dr.GetString("email_alu"), // <-- Atribui o Email do aluno
+                            CPF = dr.GetString("cpf_alu"), // <-- Atribui o CPF do aluno
+                            Telefone = dr.GetString("telefone_alu"), // <-- Atribui o Telefone do aluno
+                            DataNascimento = dr.GetDateTime("data_nascimento_alu") // <-- Atribui a Data de Nascimento do aluno
+                        };
+                        alunos.Add(aluno);
+                    }
+                }
+                Conexao.FecharConexao();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"\r\nErro ao listar os alunos! {ex.Message}");
+            }
+            return alunos;
         }
     }
 }
 ```
 
-Vamos destacar os conceitos aprendidos e como eles foram aplicados no código:
+Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no código:
 
 ### 1. **Instalação do Pacote NuGet**
 - **Definição**: Permite adicionar bibliotecas externas ao projeto C# que são necessárias para funcionalidades específicas, como a conexão com o MySQL.
 - **Exemplo no código**: A instalação do pacote `MySql.Data` foi fundamental para usar as classes e métodos de conexão com o MySQL.
 
-### 2. **Uso do MySQL Workbench**
-- **Definição**: Uma ferramenta para modelagem e gerenciamento de banco de dados MySQL. Essencial para a criação do esquema de banco de dados utilizado no projeto.
-- **Exemplo no código**: Foi utilizado para criar o banco de dados `GerenciamentoAlunos` e a tabela `Alunos`.
+### 2. **Criação da Classe `Conexao`**
+- **Definição**: A classe `Conexao` foi criada para gerenciar a conexão entre a aplicação e o banco de dados MySQL, facilitando a abertura e o fechamento de conexões de forma organizada e segura.
+- **Exemplo no código**: A classe `Conexao` encapsula a lógica de conexão com o banco de dados, utilizando o objeto `MySqlConnection` para abrir e fechar a conexão sempre que necessário, garantindo que a comunicação com o banco seja feita de forma eficiente e evitando problemas de conexão persistente.
 
-### 3. **Conexão com MySQL**
+### 3. **Padrão DAO (Data Access Object)**
+- **Definição**: O Padrão DAO é um padrão de design que separa a lógica de acesso ao banco de dados das regras de negócio, organizando as operações de CRUD (Create, Read, Update, Delete) em classes específicas.
+- **Exemplo no código**: No projeto, foi implementada uma classe DAO para gerenciar as operações de inserção, deleção, atualização e listagem de usuários. Isso inclui métodos como `InserirUsuario()`, `DeletarUsuario()`, `AtualizarUsuario()` e `ListarUsuarios()`, que interagem diretamente com o banco de dados, mantendo o código limpo e modular.
+
+### 4. **Uso do MySQL Workbench**
+- **Definição**: O MySQL Workbench é uma ferramenta gráfica de modelagem, gerenciamento e administração de bancos de dados MySQL. Além de criar e modificar esquemas de banco de dados, ele também permite executar consultas SQL e visualizar resultados de maneira interativa.
+- **Exemplo no código**: Utilizamos o MySQL Workbench para criar o banco de dados `BancoDeDadosAlunos` e a tabela `Alunos`, que são fundamentais para o funcionamento do sistema de gerenciamento de usuários.
+
+### 5. **Conexão com MySQL**
 - **Definição**: Estabelecer uma conexão entre a aplicação C# e o banco de dados MySQL, permitindo a execução de comandos SQL e manipulação de dados.
-- **Exemplo no código**: O uso da classe `MySqlConnection` para conectar ao banco de dados, e `MySqlCommand` para executar uma consulta SQL que lista todos os alunos cadastrados.
+- **Exemplo no código**: O uso da classe `MySqlConnection` para conectar ao banco de dados e `MySqlCommand` para executar uma consulta SQL que lista todos os alunos cadastrados.
 
-### 4. **Manipulação de Dados com MySQL em C#**
-- **Definição**: A execução de comandos SQL diretamente do código C#, como inserção, leitura, atualização e deleção de dados.
-- **Exemplo no código**: O comando SQL `SELECT * FROM Alunos` foi executado para listar todos os registros da tabela `Alunos`.
+### 6. **Manipulação de Dados com MySQL em C#**
+- **Definição**: A execução de comandos SQL diretamente a partir do código C#, permitindo que a aplicação interaja com o banco de dados para criar, ler, atualizar e deletar dados.
+- **Exemplo no código**: O método `ListarUsuarios()` no DAO executa o comando SQL `SELECT * FROM Usuarios` para recuperar todos os registros da tabela `Usuarios` e exibi-los na aplicação.
 
 <div align="left">
   <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
