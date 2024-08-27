@@ -1,0 +1,21 @@
+COPIE E COLE (ctrl + c, ctrl + v) o conteúdo SQL abaixo*
+
+___________________________________________
+
+
+-- Criação do banco de dados
+CREATE DATABASE BancoDeDadosAlunos;
+
+USE BancoDeDadosAlunos;
+
+-- Criação da tabela Alunos
+CREATE TABLE Alunos (
+    IdAluno INT PRIMARY KEY AUTO_INCREMENT,  -- Coluna para o ID único do Aluno
+    Nome VARCHAR(100),                       -- Coluna para o Nome do Aluno
+    CPF VARCHAR(11),                         -- Coluna para o CPF do Aluno
+    Email VARCHAR(100),                      -- Coluna para o Email do Aluno
+    Telefone VARCHAR(20),                    -- Coluna para o Telefone do Aluno
+    DataNascimento DATE                      -- Coluna para a Data de Nascimento do Aluno
+);
+
+SELECT * FROM Alunos;
