@@ -804,6 +804,142 @@ Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no c
 
 <br>
 
+<div align="center">
+  
+| <h3 align="center">➕ EXTRA </h3> |
+|:---------------------------------|
+| <p><div align="center">A partir deste ponto, é apresentado um "conteúdo extra".<br><br> Este material adicional complementa o aprendizado de P.O.O juntamente<br> com práticas sobre Banco de Dados, fazendo uma conexão com MySQL. </p> |
+
+</div>
+<br>
+
+### 7. Conexão com MySQL em P.O.O
+
+> [!NOTE]\
+> *Retirado da aula de "[Conexao_com_SQL_(POO)](https://github.com/juletopi/POO_Programacao_Orientada_a_Objetos/tree/main/Conexao_com_SQL_(POO))"* \
+> *Link do conteúdo sobre Conexão com MySQL em PDF: [Conexao_com_MySql.pdf](https://drive.google.com/file/d/1aLVD5gR8ZK7RJbayshn9ENLBc25Z1Spt/view?usp=sharing)*
+
+<div align="left">
+
+- Nesta aula foram aprendidos:
+  - Instalação do Pacote NuGet
+  - Uso do MySQL Workbench
+  - Criação do Banco de Dados para um Gerenciamento de Alunos
+  - Conexão e Manipulação de Dados com MySQL em CSharp
+
+</div>
+
+<div align="center">
+  <a href="#">
+    <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=151923&height=2&section=header&%20render">
+  </a>
+</div>
+
+### **Instalação do Pacote NuGet**
+
+Para conectar um projeto em C# ao MySQL, é necessário instalar o pacote `MySql.Data` via **NuGet**, que contém as bibliotecas necessárias para a comunicação entre a aplicação C# e o banco de dados MySQL.
+
+- **Passos para instalação**:
+  1. Abra o Gerenciador de Pacotes NuGet no Visual Studio.
+  2. Busque por `MySql.Data`.
+  3. Selecione a versão desejada e clique em "Instalar".
+  4. O pacote será adicionado ao projeto e você poderá utilizar as classes e métodos para conexão com MySQL.
+
+```bash
+# Comando NuGet para instalar o pacote MySql.Data
+Install-Package MySql.Data -Version 9.0.0
+```
+
+<div align="center">
+  <a href="#">
+    <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&color=151923&height=2&section=header&%20render">
+  </a>
+</div>
+
+### **Uso do MySQL Workbench**
+
+O MySQL Workbench é uma ferramenta gráfica usada para modelar, gerenciar e administrar bancos de dados MySQL. Ele permite criar e modificar esquemas de banco de dados, bem como executar consultas SQL.
+
+- **Passos para criar um banco de dados**:
+  1. Abra o MySQL Workbench.
+  2. Conecte-se ao servidor MySQL.
+  3. Use a interface gráfica para criar um novo banco de dados.
+  4. Crie as tabelas necessárias, especificando colunas, tipos de dados e restrições.
+  
+```sql
+-- Exemplo de criação de um banco de dados para gerenciamento de alunos
+CREATE DATABASE GerenciamentoAlunos;
+
+USE GerenciamentoAlunos;
+
+CREATE TABLE Alunos (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    DataNascimento DATE NOT NULL
+);
+```
+
+#### 3. **Código de Conexão com MySQL**
+
+```c#
+using MySql.Data.MySqlClient;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        string connectionString = "server=localhost;database=GerenciamentoAlunos;user=root;password=sua_senha_aqui";
+
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+                Console.WriteLine("Conexão estabelecida com sucesso.");
+
+                string query = "SELECT * FROM Alunos";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Console.WriteLine($"ID: {reader["Id"]}, Nome: {reader["Nome"]}, Email: {reader["Email"]}, Data de Nascimento: {reader["DataNascimento"]}");
+                }
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine($"Erro de conexão: {ex.Message}");
+            }
+        }
+    }
+}
+```
+
+Vamos destacar os conceitos aprendidos e como eles foram aplicados no código:
+
+### 1. **Instalação do Pacote NuGet**
+- **Definição**: Permite adicionar bibliotecas externas ao projeto C# que são necessárias para funcionalidades específicas, como a conexão com o MySQL.
+- **Exemplo no código**: A instalação do pacote `MySql.Data` foi fundamental para usar as classes e métodos de conexão com o MySQL.
+
+### 2. **Uso do MySQL Workbench**
+- **Definição**: Uma ferramenta para modelagem e gerenciamento de banco de dados MySQL. Essencial para a criação do esquema de banco de dados utilizado no projeto.
+- **Exemplo no código**: Foi utilizado para criar o banco de dados `GerenciamentoAlunos` e a tabela `Alunos`.
+
+### 3. **Conexão com MySQL**
+- **Definição**: Estabelecer uma conexão entre a aplicação C# e o banco de dados MySQL, permitindo a execução de comandos SQL e manipulação de dados.
+- **Exemplo no código**: O uso da classe `MySqlConnection` para conectar ao banco de dados, e `MySqlCommand` para executar uma consulta SQL que lista todos os alunos cadastrados.
+
+### 4. **Manipulação de Dados com MySQL em C#**
+- **Definição**: A execução de comandos SQL diretamente do código C#, como inserção, leitura, atualização e deleção de dados.
+- **Exemplo no código**: O comando SQL `SELECT * FROM Alunos` foi executado para listar todos os registros da tabela `Alunos`.
+
+<div align="left">
+  <h6><a href="#programação-orientada-a-objetos-"> Voltar para o início ↺</a></h6>
+</div>
+
+<br>
+
 <!-- AUTHOR -->
 
 ## 👤 Autor
