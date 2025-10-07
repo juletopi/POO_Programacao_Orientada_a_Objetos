@@ -1,12 +1,12 @@
 <!--
-❗ ➤ References used in this Repository:
-🔗 • https://github.com/piyushsuthar/github-readme-quotes
-🔗 • https://github.com/kyechan99/capsule-render
-🔗 • https://github.com/DenverCoder1/custom-icon-badges
-🔗 • https://profilepicturemaker.com
-🔗 • https://shields.io
-🔗 • https://emoji.gg
-🔗 • https://getemoji.com
+References used in this Repository
+https://github.com/piyushsuthar/github-readme-quotes
+https://github.com/kyechan99/capsule-render
+https://github.com/DenverCoder1/custom-icon-badges
+https://profilepicturemaker.com
+https://shields.io
+https://emoji.gg
+https://getemoji.com
 -->
 
 <div align="left">
@@ -52,7 +52,7 @@
 
 <div align="center">
   <p align="center">
-    <a href="#-professor">Professor</a> &#xa0; | &#xa0;
+    <a href="#%E2%80%8D-professor">Professor</a> &#xa0; | &#xa0;
     <a href="#-programação-orientada-a-objetos-poo">Sobre o tópico</a> &#xa0; | &#xa0;
     <a href="#1-classes-objetos-e-métodos">Conceitos Aprendidos 1</a> &#xa0; | &#xa0;
     <a href="#2-listas-e-classes">Conceitos Aprendidos 2</a>
@@ -1158,7 +1158,7 @@ Vamos destacar quais conceitos foram aprendidos e como eles foram aplicados no c
     <td valign="middle" width="25%">
       <div align="center">  
         <a href="https://github.com/juletopi" title="Perfil no GitHub" aria-label="GitHub - Juletopi">
-          <img src="https://user-images.githubusercontent.com/76459155/220271784-9f930c36-c370-4518-9b56-604627c6e2b5.png" width="150" alt="Profile Pic - Juletopi"/>
+          <img src="https://avatars.githubusercontent.com/u/76459155?s=400&u=4b9bd87cae92eea4fc154c28eafe226ed034a1d8&v=4" width="150" alt="Profile Pic - Juletopi"/>
           <br>
           <sub><strong>Júlio Cézar | Juletopi</strong></sub>
           <br>
